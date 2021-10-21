@@ -1,0 +1,22 @@
+HTML / CSS
+Montar uma tabela com 3 colunas e 4 linhas.
+    - No cabeçalho, com texto na cor azul, negrito e centralizado, colocar "Nome", "Ano de Nascimento" e "Telefone".
+    - Preencher com dados fictícios para próximo teste
+
+Javascript / Jquery
+Usando ou não Jquery (fica a teu critério), executar o seguinte procedimento na tabela criada acima:
+    - quando o usuário clicar na <TD> relativa ao Ano de Nascimento, informar a idade do usuário em um "alert()" na tela.
+    - o cálculo deve ser simples: subtrair do ano atual o ano de nascimento na <TD> e apresentar o resultado.
+    - Criar um botão na página que, quando clicado, altera a cor do texto do cabeçalho da tabela para vermelho
+
+PHP
+Abrir o arquivo "telefones.php"
+    - padronizar os telefones removendo parênteses, espaços ou hífens
+            - exemplo: o telefone "(51) 12345-6789" deve ser padronizado para "51123456789"
+    - apresentar os telefones padronizados em uma lista ordenada (OL/LI - html)
+
+Abrir o arquivo "classe.php"
+    - apontar os erros que o código apresenta.
+         - se possível, nos aponte o que percebeu de erros somente visualizando o arquivo 
+         - da mesma forma, aponte os erros que percebeu após rodá-lo
+         - descreva como corrigi-los; apresente sua solução.
