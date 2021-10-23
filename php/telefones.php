@@ -7,22 +7,24 @@
 		'51 99999',
 		'5199999999999999999',
 		'(51) 55555--9998',
-		'51)))))) 12345-6789'
+		'51)))))) 12345-6789',
+		'51)))))) I2eAS-6789'
 	);
-
 	// resolva abaixo
 
-	function padronizaTelefone($numero)
+	function padronizaTelefone(string $numero)
 	{
-		$expressao = "/[),.(\s-]/";
-		$numeroTratado = preg_replace($expressao, "", $numero);
+		$expressao = "/[^0-9]/"; // Qualquer coisa exceto numeros;
+		$numeroTratado = preg_replace($expressao, '', $numero);
 		
 		if ( strlen($numeroTratado) == 11 ) {
+
 			return $numeroTratado;
+
 		}
 	}
 
-	function padronizaTelefoneArray($array)
+	function padronizaTelefoneArray(array $array): array
 	{
 		foreach ( $array as $value ){
 
@@ -30,7 +32,7 @@
 
 			if ( $numeroTratado == NULL) {
 
-				unset($value);
+				unset($value); 
 
 			} else {
 
